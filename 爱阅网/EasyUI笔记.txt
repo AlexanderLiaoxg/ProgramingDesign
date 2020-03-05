@@ -1,0 +1,42 @@
+视频出处：https://www.bilibili.com/video/av35223752/
+http://www.jeasyui.net/plugins/162.html
+EASYUI是一个Html文本编辑，能复制尽量复制，否则不报错；大前提
+Pannel ->window -> dialog
+导入：
+                                <link rel="stylesheet" type="text/css" href="easyui/themes/default/easyui.css"/>
+		<link rel="stylesheet" type="text/css" href="easyui/themes/icon.css"/>
+		<script src="easyui/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="easyui/jquery.easyui.min.js" type="text/javascript" charset="utf-8"></script>
+
+EasyUI是通过类来表达样式的，框架基本如此，所ID是可以随便用的，其中它通过data-option属性来控制模块
+
+Tree:
+id：节点的 id，它对于加载远程数据很重要。
+text：要显示的节点文本。
+state：节点状态，'open' 或 'closed'，默认是 'open'。当设置为 'closed' 时，该节点有子节点，并且将从远程站点加载它们。
+checked：指示节点是否被选中。
+attributes：给一个节点添加的自定义属性。
+children：定义了一些子节点的节点数组。
+
+数据库名字与上面的不一样怎么办：@JsonProperty(value="text")下面是变量：String name;
+
+EL的三目运算符不错
+
+
+直接用静态的ul和li,其中的li通过data-option来设置属性，如fileName等
+
+$('#main_tabs').tabs('add',{
+							title:node.text,
+							selected:true,
+							cache:true,
+							closable:true,
+							href:"NewFile.jsp"
+						})
+获取标签面板并且执行add操作，常用属性下面的是
+
+@Select("select * from menu")
+List<Menu> selAll();//方法名随意更改
+
+分页思想：
+①Ajax
+②begin设置变量，url：servlet改变begin变量的值，反指回jsp(相对于刷新)

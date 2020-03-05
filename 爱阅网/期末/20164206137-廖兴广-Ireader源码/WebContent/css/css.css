@@ -1,0 +1,155 @@
+body{
+	background-image: url(KaiTi.jpg);
+	/* 不重复 */
+	background-repeat:no-repeat;
+	/* 全覆盖和俩个百分比以及 */
+	background-size:cover;
+	/* 背景图片不动 */
+	background-attachment: fixed;
+	//background:red;
+}
+
+h2{
+	color:gray;
+	font-size:12em;
+	/* 透明度 */
+	 opacity:0.8 ;
+	background-image:url(pink.jpg);
+	background-size:cover;
+	
+}
+
+h3{
+	text-align: center;
+	font-family: KaiTi;
+}
+h4{
+	text-align: center;
+	font-family: simsun;
+	margin-bottom: 3%;
+}
+
+
+.aotocenter{
+	width:80%;
+	line-height: 26px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+.center1{
+	text-align:center;
+	margin-bottom: 2%;
+}
+
+.space{
+	/* 加空白，px,em,百分比 */
+	padding:25px;
+	border-style:dashed;
+	border-color:red;
+	box-shadow:3px 3px 5px black;
+}
+
+
+.txt{
+font-size: 15px;
+	margin-bottom: 5%;
+			/* 最大宽度 */
+		line-height: 26px;
+	//max-width:200px;
+	/* 字体，style */
+	font-family:cursive;
+	/* 加粗 */
+	font-weight:bold;
+	/* 缩进 */
+	text-indent: 3em;
+	/* 边距 */
+	margin-left:10em;
+	margin-right:10em;
+	/* 圆角， */
+	border-radius:15px;
+	background-color: antiquewhite;
+	border-top-left-radius:5px;
+	box-shadow: 5px 3px 5px gray;
+}
+
+.button{
+display: inline-block;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;           /*触发小手手*/
+  text-align: center;   
+  text-decoration: none;
+  font-family: KaiTi;
+  color: black;
+  outline: none;
+  background-color: lightgoldenrodyellow;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+
+.button:hover {background-color: lightyellow}
+
+.button:active {
+  background-color: red;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.stars{
+            white-space: nowrap;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+.stars li{
+            display: inline-block;
+            color: #ADADAD;
+            font-size: 40px;
+        }
+        
+.stars li:hover{
+            cursor: pointer;
+            background: none;
+        }
+
+div #chose{
+	margin-top: 6%;
+	width: 100%;
+	height:60px;
+}
+
+nav #fontsize{
+	width: 5px;
+	height: 5px;
+	float: left;
+}
+
+#nowDateTimeSpan{
+	padding-left: 5%;
+}
+
+#nowDateTimeSpan{
+	  transform: rotateY(130deg);
+}
+
+i{
+	padding: 5px;
+}
+
+#eye{
+	cursor: pointer;
+}
+
+#sun{
+	cursor: pointer;
+}
+
+#return{
+	cursor: pointer;
+}
+

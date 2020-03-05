@@ -1,0 +1,61 @@
+# depslib dependency file v1.0
+1515225611 source:d:\ege工程\滴滴打车系统\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1515226651 source:d:\ege工程\滴滴打车系统\无向网.c
+	<stdio.h>
+
+1515209950 source:d:\ege工程\滴滴打车系统\car.c
+	<stdio.h>
+
+1515208664 source:d:\ege工程\滴滴打车系统\gettextline.c
+	<stdio.h>
+
+1515291694 source:c:\users\1\desktop\滴滴打车系统\gettextline.c
+	<stdio.h>
+
+1515380070 source:c:\users\1\desktop\滴滴打车系统\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1515379646 source:c:\users\1\desktop\滴滴打车系统\无向网.c
+	<stdio.h>
+
+1515373841 source:c:\users\1\desktop\滴滴打车系统\car.c
+	<stdio.h>
+
+1515309139 source:c:\users\1\desktop\滴滴打车系统\fixed_b_and_g.c
+	<stdio.h>
+
+1515378906 source:c:\users\1\desktop\滴滴打车系统\reply.c
+	<stdio.h>
+	<windows.h>
+	<string.h>
+	<stdlib.h>
+
+1515291694 source:c:\users\廖兴广\desktop\滴滴打车系统\gettextline.c
+	<stdio.h>
+
+1515640232 source:c:\users\廖兴广\desktop\滴滴打车系统\car.c
+	<stdio.h>
+
+1515309139 source:c:\users\廖兴广\desktop\滴滴打车系统\fixed_b_and_g.c
+	<stdio.h>
+
+1515640826 source:c:\users\廖兴广\desktop\滴滴打车系统\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1515640580 source:c:\users\廖兴广\desktop\滴滴打车系统\reply.c
+	<stdio.h>
+	<windows.h>
+	<string.h>
+	<stdlib.h>
+
+1515640826 source:c:\users\廖兴广\desktop\滴滴打车系统\无向网.c
+	<stdio.h>
+
+1515639327 source:c:\users\廖兴广\desktop\滴滴打车系统\menu.c
+	<stdio.h>
+

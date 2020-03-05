@@ -1,0 +1,741 @@
+
+body {
+	font-size: 14px;
+	font-family: 微软雅黑, "microsoft yahei", PMingLiu, Arial, Helvetica, sans-serif;
+	margin: 0 auto !important;
+	color: #3e3e3e;
+	background-color: #f2f2f2;
+	line-height: 24px;
+}
+
+button {
+	border: none;
+	width: 50px;
+	height: 20px;
+	background-color: #d20001; //故事会红
+	border-radius: 5px;
+	font: 400 12.3333px Arial;
+	margin: 5px 0px 0 5px;
+	text-align: center;
+		cursor: pointer;
+}
+
+div.login{
+width: 380px;height: 30px;float: right;
+}
+
+input.account {
+	box-shadow: inset 0px 2px 3px 0px #ddd;
+	height: 18px;
+	width: 100px;
+	padding: 0 4px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #9a9a9a #cdcdcd #cdcdcd #9a9a9a;
+}
+
+div.headTop {
+	overflow: hidden;
+	text-align: right;
+	height: 30px;
+	width: 1220px;
+	padding: 0 0px;
+	background: #f2f2f2;
+	margin: 0 auto;
+}
+
+div.title_background {
+	width: 100%;
+	height: 104px;
+	background-color: #d20001;
+	float: none;
+}
+
+div.navigation {
+	width: 100%;
+	padding: 0 0px;
+	height: 60px;
+	background-color: white;
+}
+
+nav {
+	position: absolute;
+}
+
+ul {
+	background: #fff;
+	/* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);*/
+	white-space: nowrap;
+	/* 避免文字換行 */
+	margin: 7.5px auto 0px auto;
+}
+
+ul li {
+	position: relative;
+	/* 使子選單依照母選單的座標顯示 */
+}
+
+
+/* 設定母選單的連結樣式 */
+
+ul li a {
+	text-decoration: none;
+	color: #777;
+	padding: 10px 20px;
+	display: block;
+}
+
+ul li a:only-child {
+	background: none;
+}
+
+ul li:hover {
+	background: #777;
+}
+
+ul li:hover a {
+	color: #fff;
+}
+
+ul li:hover ul {
+	display: inline-block !important;
+	;
+}
+
+nav>ul>li {
+	/*>是指只能一代接一代*/
+	display: inline-block;
+}
+
+
+/*二级显示 */
+
+ul ul {
+	position: absolute;
+	margin-top: 0;
+	list-style: none;
+	color: white;
+	background: #d20001;
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	display: none;
+	z-index: 999;
+}
+
+ul ul li:hover {
+	background: none;
+}
+
+ul ul li a:hover {
+	text-decoration: underline;
+}
+
+
+/*上传页面*/
+div.main-up{
+	margin: auto;
+	width: 80%;
+	height: 1200px;
+}
+
+/*主块*/
+
+.main {
+	background-color: #fff;
+	padding-top: 40px;
+}
+
+.fixed {
+	width: 1200px;
+	padding: 0 30px;
+	margin: 0 auto;
+}
+
+.mainLeft {
+	float: left;
+	background-color: #fff;
+	width: 870.4px;
+	height: 2020px;
+}
+
+.mainLeft1 {
+	padding-top: 20px;
+	padding-left: 30px;
+	float: left;
+	width: 810px;
+	height: 500px;
+}
+
+.mainLeft1-1 {
+	float: left;
+	width: 370px;
+	height: 470px;
+}
+
+.mainLeft1-2 {
+	float: right;
+	width: 400px;
+	height: 467px;
+}
+
+.txtpic {
+	border-bottom: 1px groove ghostwhite;
+	width: 390px;
+	height: 160px;
+}
+
+.txtpic:hover p {
+	color: red;
+}
+
+.txtpic:hover h3 {
+	color: red;
+}
+
+.mainLeft1-2CarouselInfo {
+	float: left;
+	width: 220px;
+	max-height: 115px;
+	overflow: hidden;
+}
+
+.mainLeft1-2CarouselPic {
+	padding-top: 20px;
+	float: right;
+	height: 115.2px;
+	width: 170px;
+}
+
+.mainLeft-comment-title {
+	padding-top: 20px;
+	line-height: 30px;
+	background: url(http://www.storychina.cn/img/title_bg.png) repeat-x left bottom;
+}
+
+.mainLeft-comment-title h3 {
+	font-size: 18px;
+	font-weight: normal;
+	border-bottom: 4px solid #cc0001;
+	border-bottom-;
+	color: #000;
+	width: 120px;
+}
+
+.mainLeft-comment-pic h3 {
+	font-size: 16px;
+	font-weight: normal;
+	border-bottom: none;
+	color: black;
+}
+
+.mainLeft-comment-pic h4 {
+	font-size: 12px;
+	font-weight: normal;
+	border-bottom: none;
+	color: black;
+}
+
+.mainLeft-comment-pic {
+	background-color: #f2f2f2;
+	padding-top: 10px;
+	width: 810px;
+	height: 623px;
+}
+
+.mainLeft-comment-pic img {
+	width: 100%;
+	height: 100%;
+}
+
+.mainLeft-comment-pic p {
+	color: black;
+	line-height: 18px;
+}
+
+.mainLeft-comment-picTxt-left {
+	float: left;
+	padding-top: 10px;
+	padding-left: 30px;
+	width: 355px;
+	height: 380px;
+	overflow: hidden;
+}
+
+.mainLeft-comment-picTxt-right {
+	float: right;
+	padding-right: 30px;
+	padding-top: 10px;
+	width: 355px;
+	height: 380px;
+	overflow: hidden;
+}
+
+.mainLeft-comment-txt-left {
+	float: left;
+	width: 385px;
+	background: #FFFFFF;
+}
+
+.mainLeft-comment-txt-right {
+	float: right;
+	width: 385px;
+	background: #FFFFFF;
+}
+
+.mainLeft-comment-pic-1 {
+	float: left;
+	width: 355px;
+	height: 250px;
+}
+
+.mainLeft-comment-pic-2 {
+	float: right;
+	width: 355px;
+	height: 250px;
+}
+
+.mainLeft-comment-pic-ul {
+	width: 800px;
+	height: 130px;
+}
+
+.mainLeft-comment-pic-ul ul {
+	padding-top: 10px;
+	float: left;
+	width: 100%;
+}
+
+.mainLeft-comment-pic-ul li {
+	list-style: none;
+	padding-left: 30px;
+	float: left;
+	width: 370px;
+}
+
+.mainLeft2 {
+	padding-left: 30px;
+	float: left;
+	width: 810px;
+	height: 112px;
+}
+
+.mainLeft3 {
+	padding-left: 30px;
+	float: left;
+	width: 810px;
+	height: 593px;
+}
+
+.mainLeft3-1 {
+	width: 810px;
+	height: 33.6px;
+	line-height: 30px;
+}
+
+.mainLeft3-2 {
+	overflow: hidden;
+	width: 810px;
+	height: 430px;
+}
+
+.mainLeft3-3 {
+	background-color: azure;
+	width: 810px;
+	height: 100px;
+}
+
+.mainLeft4 {
+	float: left;
+	border: solid;
+	color: red;
+	width: 810px;
+	height: 623px;
+}
+
+.mainLeft4-1 {
+
+	width: 810px;
+	height: 33.6px;
+	line-height: 30px;
+	background: url(http://www.storychina.cn/img/title_bg.png) repeat-x left bottom;
+}
+
+.mainLeft4-2 {
+	width: 810px;
+	height: 430px;
+}
+
+.mainLeft4-3 {
+	background-color: azure;
+	width: 810px;
+	height: 100px;
+}
+
+.comment-title {
+	padding-top: 20px;
+	line-height: 30px;
+	background: url(http://www.storychina.cn/img/title_bg.png) repeat-x left bottom;
+}
+
+.comment-title h3 {
+	font-size: 18px;
+	font-weight: normal;
+	border-bottom: 4px solid #cc0001;
+	border-bottom-;
+	color: #000;
+	width: 120px;
+}
+
+.comment-pic {
+	padding-top: 10px;
+	width: 320px;
+	height: 184px;
+}
+
+.comment-pic-2 {
+	padding-top: 20px;
+	width: 258px;
+	height: 158px;
+	margin: auto;
+}
+
+.comment-pic-2 img {
+	height: 100%;
+	width: 100%;
+}
+
+.mainRight2 p {
+	text-align: center;
+}
+
+.mainRight {
+	float: right;
+	background-color: #fff;
+	width: 320px;
+	height: 2018px;
+}
+
+.mainRight1 {
+	width: 320px;
+	height: 247.6px;
+}
+
+.mainRight2 {
+	width: 320px;
+	height: 466.4px;
+}
+
+.mainRight4 {
+	padding-top: 30px;
+	width: 320px;
+	height: 172px;
+}
+
+.mainRight4:hover p {
+	color: red;
+}
+
+.mainRight5 {
+	width: 320px;
+	height: 529.6px;
+}
+
+.mainRight5 h3 {
+	font-size: 18px;
+	font-weight: normal;
+	border-bottom: 4px solid #cc0001;
+	border-bottom-;
+	color: #000;
+	width: 180px;
+}
+
+.mainRight5-pic {
+	padding-left: 8px;
+	width: 150px;
+	height: 216px;
+}
+
+.mainRight5-pic img {
+	border-radius: 15px;
+}
+
+.read {
+	/*这里本来没有大小，配合遮罩布*/
+	position: relative;
+	height: 275px;
+	width: 386px;
+    margin-left: 6px;
+    margin-right: 6px;
+    float: left;
+    margin-top: ;
+    margin-bottom: 3%;
+    padding: 25px;
+    line-height: 50%;
+    box-shadow: 3px 3px 5px black;
+}
+
+div.readButton{
+	display: inline-block;
+    padding: .3em .5em;
+    background-image: linear-gradient(#ddd, #bbb);
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3em;
+    box-shadow: 0 1px white inset;
+    text-align: center;
+    text-shadow: 0 1px 1px black;
+    color:white;
+    font-weight: bold;
+}
+
+div.readButton:active{
+    box-shadow: .05em .1em .2em rgba(0,0,0,.6) inset;
+    border-color: rgba(0,0,0,.3);
+    background: #bbb;
+}
+
+#full{
+
+	padding-top: 5px;
+	padding-left: 8px;
+	float: left;
+}
+
+#part{
+
+	
+	float: left;
+}
+
+#down{
+	padding-top: 5px;
+	padding-right: 8px;
+	float: left;
+}
+
+/*reader css*/
+   div#main{
+	width: 100%;
+   	padding-top: 50px;
+   	float: left;
+   }
+   
+   div#main-left{
+   	float: left;
+   	   width: 60%;
+   	   height: 1600px;
+   	   padding-left:10% ;
+   	   margin-top: 50px ;
+   }
+      div#main-right{
+       float: right;
+       padding: 10%;
+   }
+   
+   div#bottom{
+   	overflow: hidden;
+   	   height: 200px;
+   }
+   h4{
+   	padding-top: 15px;
+	text-align: center;
+	font-family: simsun;
+}
+   
+/*animation*/
+#row1 img{
+	animation: flyRight 3s;
+}
+
+#row1 img:hover{
+	transition: all 2s;
+	transform: scale(1.2);
+}
+
+#row2 img:hover{
+	/*transition: all 2s;
+	transform: scale(1.2);*/
+}
+#row3 img:hover{
+	transition: all 2s;
+	transform: scale(1.2);
+}
+#row4 img:hover{
+	transition: all 2s;
+	transform: scale(1.2);
+}
+
+#row4{
+	transform: translateX(-1000px) rotate(0deg);
+	transition: all 2s;
+}
+
+#row3{
+	transform: translateX(1000px) rotate(0deg);
+	transition: all 2s;
+}
+
+@keyframes flyLeft{   /*@keyframes定义一个动画,@-ms-keyframes针对IE浏览器*/
+	0%{transform: translateX(-1200px) rotate(0deg);}                         /*from{}/*初始状态*/
+	100%{transform: translateX(0) rotate(360deg);}                     /*to{}/*结束状态*/
+}
+
+/*有停顿*/
+@keyframes flyRight{   
+	0%{transform: translateX(1200px) translateY(-800px) rotate(0deg);}                         /*from{}/*初始状态*/
+	20%{transform: translateX(800px) translateY(0px) rotate(-20deg);}    
+	40%{transform: translateX(720px) translateY(-300px) rotate(30deg);}                  /*to{}/*结束状态*/
+	60%{transform: translateX(480px) translateY(-500px) rotate(50deg);} 
+	80%{transform: translateX(240px) translateY(-300px) rotate(30deg);} 
+	100%{transform: translateX(0px) translateY(0px) rotate(0deg);}
+}
+
+.divMask{
+	position: absolute; /*设置遮挡层相对于父容器绝对定位*/
+    left: 20px;
+   top: -500px;
+	width: 90%;
+	height: 90%;
+	background: rgba(0,0,0,.6);/*.6是百分之六十的透明度*/
+	color: #fff;
+}
+
+/*为了实现遮幕的隐藏而不影响其它的read模块*/
+#forPosition1{
+	cursor: pointer;
+	overflow: hidden;
+}
+
+#forPosition2{
+	cursor: pointer;
+	overflow: hidden;
+}
+
+
+/*BootStrap冲突*/
+.jumbotron {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+	color: inherit;
+	background-color: white;
+	border-radius: 15px;
+}
+
+.up {
+  display: inline-block;
+  border-radius: 8px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  font-family: kartika;
+  padding: 10px;
+  width: 160px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.up span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.up span:after {
+  content: '⇧';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.up:hover span {
+  padding-right: 25px;
+}
+
+.up:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+.return {
+  display: inline-block;
+  border-radius: 8px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  font-family: kartika;
+  padding: 10px;
+  width: 160px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.return span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.return span:after {
+  content: '◴';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.return:hover span {
+  padding-right: 25px;
+}
+
+.return:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+
+input[type="file"]{
+	text-align: center;
+	width: 500px;
+  border-radius:4px;
+  border:1px solid #c8cccf;
+
+}
+
+.up_list{
+	padding-top: 20px;
+	margin: auto;
+}
+
+.up_list tr{
+	height: 50px;
+}
+
+
+/*页脚*/
+.footer{
+	width: 100%;
+	height: 178px;
+	background-color: #423e3e;
+	float: left;
+}
+.footerContend{
+	margin-top: 3%;
+
+}
+.footer p{
+	text-align: center;
+	color: white;
+}

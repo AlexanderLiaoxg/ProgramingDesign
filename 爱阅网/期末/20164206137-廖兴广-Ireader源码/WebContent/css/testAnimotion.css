@@ -1,0 +1,86 @@
+#row1 img{
+	animation: flyLeft 2s;
+}
+
+#row6{
+	transform: translateX(-1000px) rotate(0deg);
+	transition: all 2s
+}
+
+@keyframes flyLeft{   /*@keyframes定义一个动画,@-ms-keyframes针对IE浏览器*/
+	0%{transform: translateX(-1200px) rotate(0deg);}                         /*from{}/*初始状态*/
+	100%{transform: translateX(0) rotate(360deg);}                     /*to{}/*结束状态*/
+}
+
+/*#row1 img:hover{
+	/*transition: all 1s;/*tranform过渡（CSS）动画,延迟一秒*/
+	/*transform: scale(1.2); /*tranform过渡（CSS）动画（2D转换），scale放大*/
+	/*transform: translate(50px,100px);/*transform，x,y轴移动*/
+	/*transform: translate(50px,100px) scale(1.6);/*多值*/
+	/*transform: rotate(180deg)scale(1.6);/*deg角度*/
+
+
+
+/*滑动变色：背景渐变，然后滑动*/
+/**/
+#btnSide{
+	background: linear-gradient(to right,#000000 50%,#005296 50%);  /*渐变效果,半黑linear-gradient(to right,#000000 50%,#005296 50%);*/
+	background-size: 200% 100%;  /*背景放大*/
+	background-position: left bottom;
+	padding: 15px;
+	color: #FFFFFF;
+	position: fixed;             /*相对浏览器窗口进行定位*/
+	left: 0px;	/*固定在窗口左边*/
+	top: 50%;
+	cursor: pointer;  /*手的形状*/
+	transition: all .4s;
+}
+
+#btnSide:hover{
+	background-position: right top;
+}
+
+#divSide{
+	background: #000000;
+	color: #FFFFFF;
+	width: 250px;
+	height: 100%;
+	position: fixed;
+	left: -250px;
+	top: 0px;
+	
+}
+
+#clsSide{
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	background: white;
+}
+
+#rTop{
+	position: fixed;
+	height: 30px;
+	width: 30px;
+	right: 60px;
+	bottom: -160px;
+	cursor: pointer;
+}
+
+#remove_left{
+	float: right;
+	cursor: pointer;
+}
+
+.col-sm-4{
+	overflow: hidden;
+}
+.divMask{
+	position: absolute; /*设置遮挡层相对于父容器绝对定位*/
+    left: 20px;
+    top: -300px;
+	width: 90%;
+	height: 90%;
+	background: rgba(0,0,0,.6);/*.6是百分之六十的透明度*/
+	color: #fff;
+}

@@ -1,0 +1,19 @@
+.com-Titel {
+    line-height: 30px;
+    background: url(http://www.storychina.cn/img/title_bg.png) repeat-x left bottom;
+}.fixed {
+    display: block;
+    min-height: 1%;
+}.fixed:after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}.com-Titel h3 {
+    font-size: 18px;
+    font-weight: normal;
+    border-bottom: 4px solid #cc0001;
+    color: #000;
+    min-width: 100px;
+}

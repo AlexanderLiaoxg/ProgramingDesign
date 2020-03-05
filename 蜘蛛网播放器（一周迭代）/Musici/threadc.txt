@@ -1,0 +1,129 @@
+package Part;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowListener;
+
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
+
+public class ListAddListener extends UI {
+	private int flag = 0;
+	private boolean FLAG = false; // FLAG这里是多余的
+
+	public void Listener() {
+
+		// 监听歌曲播放
+		jList.addListSelectionListener(new ListSelectionListener() {// 一次点击监听到俩次
+
+			@Override
+			public void valueChanged(ListSelectionEvent e) {
+				flag = flag + 1; // 俩次点击解决
+				System.out.println(flag);
+
+				if ((flag % 2) == 0) {
+					String str = (String) jList.getSelectedValue();
+					System.out.println(str + "已经成功");
+					PlayMultithread my = new PlayMultithread(str, FLAG);
+					Thread th = new Thread(my);
+					th.start(); // 有点莫名其妙
+					jList.addListSelectionListener(new ListSelectionListener() {
+
+						@Override
+						public void valueChanged(ListSelectionEvent e) {
+							th.interrupt();
+
+						}
+					});
+					// th.stop();
+
+					/** 按钮 **/
+					synchronized (th) {
+						lb2.addActionListener(new ActionListener() {
+
+							@Override
+							public void actionPerformed(ActionEvent e) {
+								// TODO Auto-generated method stub
+								try {
+									Thread th2 = new Thread();
+									th.wait();
+								} catch (InterruptedException e1) {
+									// TODO Auto-generated catch block
+									System.out.println("wait down");
+									e1.printStackTrace();
+								}
+								System.out.println("has paused");
+								lb2.addActionListener(new ActionListener() {
+
+									@Override
+									public void actionPerformed(ActionEvent e) {
+										// TODO Auto-generated method stub
+										th.notify();
+										System.out.println("has re");
+									}
+								});
+							}
+						});
+					}
+				}
+			}
+		});
+
+		/** 设置关闭窗口退出程序 **/
+		frame.addWindowListener(new WindowListener() {
+
+			@Override
+			public void windowOpened(WindowEvent e) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void windowIconified(WindowEvent e) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void windowDeiconified(WindowEvent e) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void windowDeactivated(WindowEvent e) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void windowClosing(WindowEvent e) {
+				// TODO Auto-generated method stub
+				System.exit(0);
+			}
+
+			@Override
+			public void windowClosed(WindowEvent e) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void windowActivated(WindowEvent e) {
+				// TODO Auto-generated method stub
+
+			}
+		});
+	}
+
+	public boolean isFLAG() {
+		return FLAG;
+	}
+
+	public void setFLAG(boolean fLAG) {
+		FLAG = fLAG;
+	}
+
+	// jbutton.add
+}

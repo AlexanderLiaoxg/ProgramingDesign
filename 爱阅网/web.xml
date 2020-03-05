@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+          http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+           version="3.0">
+	<!--配置springMVC的启动 -->
+	<servlet>
+		<!--可以约束springMVC的主配置文件如果在默认路径下时的文件名 -->
+		<servlet-name>springMVC</servlet-name>
+		<!--配置前端控制器 -->
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<!--当主配置文件不在默认路径下，则需要配置文件的路径 -->
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>classpath:a/springmvc.xml</param-value>
+		</init-param>
+		<!--配置springMVC 随程序启动而启动 -->
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>springMVC</servlet-name>
+		<!--/:表示拦截所有请求 -->
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+</web-app>

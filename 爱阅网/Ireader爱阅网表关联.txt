@@ -1,0 +1,13 @@
+userinfo -> add -> users   (add,update,remove)
+resource-> belong_resource  (add,update,remove)
+
+
+
+触发器 (add,update,remove)  :用户和资源
+，预编译
+
+下载俩个路径 下载绝对路径，试阅和全本是项目下，不过只读权限，不会刷新文件夹，自定义名字为图片名字
+
+Admin_login修改响应式，加了拦截器
+
+管理只能选一行

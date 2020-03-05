@@ -1,0 +1,22 @@
+.Becenter{
+	text-align:center;
+
+}
+
+.floating{
+	float:left;
+}
+.fc{
+	margin:0 auto;height:2px;width:3px;
+}
+
+#blank{
+	padding:20px;
+}
+
+.Setheight{
+	line-height:1em;
+}
+.clearbr{
+	clear:left;
+}

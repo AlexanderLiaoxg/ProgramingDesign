@@ -1,0 +1,3 @@
+关于ajax,实质上是js的一种应用，核心在于触发js函数（事件），中创建xmlhttp对象，用来转向服务器获取数据，然后通过
+repose(servlet)的内容到，JS函数中的xmlhttp.reposeText来回收显示文本数据。xmlhttpRequest对象至关重要，是JS与
+servlet的传递媒介

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <filter>
+    <filter-name>admin</filter-name>
+    <filter-class>com.ireader.service.AdminFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>admin</filter-name>
+    <url-pattern>/Admin_index.jsp</url-pattern>
+    <servlet-name>com.ireader.servlet.Admin_ShowMenu</servlet-name>
+  </filter-mapping>
+  <listener>
+    <listener-class>com.ireader.service.OnLineListenner</listener-class>
+  </listener>
+</web-app>

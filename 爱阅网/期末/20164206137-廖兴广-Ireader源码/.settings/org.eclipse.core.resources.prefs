@@ -1,0 +1,8 @@
+eclipse.preferences.version=1
+encoding//WebContent/Admin_Login.jsp=UTF-8
+encoding//WebContent/Download.jsp=UTF-8
+encoding//WebContent/Voucher_Center.jsp=UTF-8
+encoding//WebContent/css=UTF-8
+encoding//WebContent/css/Background.css=UTF-8
+encoding//src/com/ireader/db/DbConnection.java=GBK
+encoding//src/com/ireader/servlet/LoginServlet.java=UTF-8

@@ -1,0 +1,42 @@
+div.mainBorder{
+	overflow: hidden;
+	background-image: url(../img/Register/background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%px;
+	padding: 15%;
+	padding-top: 10%;
+	background-color: antiquewhite;
+}
+div.content{overflow: hidden;
+	/*background-image: url(background.jpg);*/
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	/*background-color: aquamarine;*/
+	box-shadow: 5px 5px 5px gray;
+	/*opacity: 0.9;*/
+}
+
+div.content table{
+	padding: 50px;
+	padding-left:280px !important;
+	margin: auto;
+	text-align: right;
+}div.content td label{
+	text-align: left;
+}
+label{
+	color: black;
+}
+
+input{
+  color: gray;
+}
+
+p.do{
+	color: red;
+}
+#login{
+	text-align: center;
+}

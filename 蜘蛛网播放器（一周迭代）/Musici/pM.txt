@@ -1,0 +1,27 @@
+package Part;
+
+import MusicPlayer0.playMusic;
+
+public class PlayMultithread implements Runnable {
+
+	String str;
+	private boolean FLAG;
+
+	public PlayMultithread(String str, boolean FLAG) {
+		super();
+		this.str = str;
+		this.FLAG = FLAG;
+	}
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		FLAG = (!FLAG);
+		System.out.println(FLAG);
+		if (FLAG) {
+			new playMusic(str);
+			System.out.println(str);
+		}
+	}
+
+}

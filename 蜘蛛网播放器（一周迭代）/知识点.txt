@@ -1,0 +1,4 @@
+组件的透明度：panel.setOpaque(false); // 将面板设置为透明
+关闭窗口而非终止程序：frame.dispose();// 关闭窗口但是不关闭程序
+gbc_btnNewButton_1.insets = new Insets(0, 0, 0, 0);          //    组件之间的间GridbagLayout
+必须要MediaPlayer才能控制音量
